@@ -5,6 +5,17 @@ All notable changes to the `noxaeapi-sdk-cs` will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.3] - 2026-11-07
+
+### Added
+- Official documentation link (`https://noxapi.noxlydev.xyz`) across package metadata and `README.md`.
+- Updated `PackageProjectUrl` to `https://noxapi.noxlydev.xyz`.
+
+## [0.7.2] - 2026-11-07
+
+### Changed
+- Cleaned up documentation links to avoid internal monorepo references.
+
 ## [0.7.1] - 2026-11-07
 
 ### Added

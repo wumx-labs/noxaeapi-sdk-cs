@@ -5,12 +5,12 @@
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <PackageId>WumxLabs.NoxAeApi</PackageId>
-    <Version>0.7.2</Version>
+    <Version>0.7.3</Version>
     <Authors>Wumx Labs;NoxAeApi Contributors</Authors>
     <Company>Wumx Labs</Company>
     <Description>Official C# / .NET SDK for NoxAeApi Minecraft REST API suite and Velocity Network Hub</Description>
     <RepositoryUrl>https://github.com/wumx-labs/noxaeapi-sdk-cs</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/wumx-labs/noxaeapi-sdk-cs</PackageProjectUrl>
+    <PackageProjectUrl>https://noxapi.noxlydev.xyz</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
