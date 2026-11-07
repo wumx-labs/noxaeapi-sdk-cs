@@ -3,11 +3,19 @@ name: Publish to NuGet
 on:
   release:
     types: [published]
+  push:
+    tags:
+      - 'v*'
   workflow_dispatch:
 
 jobs:
   build-and-publish:
+    name: Build and Push to NuGet
     runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: read
 
     steps:
     - name: Checkout code
@@ -29,9 +37,12 @@ jobs:
         name: nupkg
         path: ./nupkg/*.nupkg
 
+    - name: NuGet Login (OIDC Trusted Publishing)
+      uses: NuGet/login@v1
+      id: login
+      with:
+        user: noxlydev
+
     - name: Publish to NuGet
-      if: env.NUGET_API_KEY != ''
-      env:
-        NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
       run: |
-        dotnet nuget push ./nupkg/*.nupkg --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json --skip-duplicate
+        dotnet nuget push ./nupkg/*.nupkg --api-key ${{ steps.login.outputs.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
