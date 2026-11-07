@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <PackageId>WumxLabs.NoxAeApi</PackageId>
-    <Version>0.7.1</Version>
+    <Version>0.7.2</Version>
     <Authors>Wumx Labs;NoxAeApi Contributors</Authors>
     <Company>Wumx Labs</Company>
     <Description>Official C# / .NET SDK for NoxAeApi Minecraft REST API suite and Velocity Network Hub</Description>

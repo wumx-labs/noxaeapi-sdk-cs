@@ -1,6 +1,6 @@
 # NoxAeApi C# / .NET SDK
 
-Official .NET SDK for the [NoxAeApi](https://github.com/NoxlyDev/NOXAPI-HUB) Minecraft REST API suite and Velocity Network Hub.
+Official .NET SDK for the NoxAeApi Minecraft REST API suite and Velocity Network Hub.
 
 ## Features
 
